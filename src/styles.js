@@ -7,6 +7,7 @@ export const About = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+  background: #1b1b1b;
 `
 export const Description = styled.div`
   flex: 1;
