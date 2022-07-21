@@ -62,3 +62,43 @@ export const imageAnim = {
         },
     },
 };
+
+export const lineAnim = {
+    hidden: {
+        width: '0%',
+    },
+    show: {
+        width: '100%',
+        transition: {
+            duration: 1,
+        }
+    }
+};
+
+export const slider = {
+    hidden: {
+        x: '-135%',
+        skew: '45deg',
+    },
+    show: {
+        x: '100%',
+        skew: '0deg',
+        transition: {
+            duration: 0.5,
+            ease: 'easeOut',
+        },
+    }
+};
+
+export const sliderContainer = {
+    hidden: {
+        opacity: 1,
+    },
+    show: {
+        opacity: 1,
+        transition: {
+            staggerChildren: 0.15,
+            ease: 'easeOut'
+        }
+    }
+}
