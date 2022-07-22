@@ -16,6 +16,7 @@ import {
     sliderContainer
 } from "../animation";
 import { useScroll } from "../components/useScroll";
+import ScrollTop from "../components/ScrollTop";
 
 const OurWork = () => {
     const [element, controls] = useScroll();
@@ -70,6 +71,7 @@ const OurWork = () => {
                     </Hide>
                 </Link>
             </Movie>
+            <ScrollTop />
         </Work>
     )
 }
@@ -80,6 +82,9 @@ const Work = styled(motion.div)`
     overflow: hidden;
     padding: 5rem;
     background: #1b1b1b;
+    @media (max-width: 1000px) {
+        padding: 2rem 2rem;
+    }
 `;
 const Movie = styled(motion.div)`
     padding-bottom: 10rem;
@@ -96,7 +101,6 @@ const Movie = styled(motion.div)`
         width: 100%;
         height: 70vh;
         object-fit: cover;
-        object-position: 100% 40%;
     }
     .goodtimes {
         object-position: 100% 100%;
