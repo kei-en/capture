@@ -32,13 +32,13 @@ const MovieDetail = () => {
                         <img src={movie.mainImg} alt={movie} />
                     </HeadLine>
                     <Awards>
-                        {movie.awards.map((award) => {
+                        {movie.awards.map((award) => (
                             <Award 
                                 title={award.title} 
                                 description={award.description} 
                                 key={award.title}
                             />
-                        })}
+                        ))}
                     </Awards>
                     <ImageDisplay>
                         <img src={movie.secondaryImg} alt="movie" />
